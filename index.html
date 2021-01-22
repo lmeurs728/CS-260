@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Lance's Web Server</title>
-  </head>
-  <body>
-    <h1>Page 1 (Editted Locally and Pushed to Production Server)</h1>
-    <p>Hi, my name is Lance Meurs</p>
-    <h2>Other Pages:</h2>
-    <ul>
-      <li><a href="./page2.html">Page 2</a></li>
-      <li><a href="./page3.html">Page 3</a></li>
-    </ul>
-  </body>
+<head>
+	<title>Lance's Web Server</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+	<ul>
+		<li class="active side-nav"><a href="./index.html">Page 1</a></li>
+		<li class="side-nav"><a href="./page2.html">Page 2</a></li>
+		<li class="side-nav"><a href="./page3.html">Page 3</a></li>
+	</ul>
+	<div class="main-page">
+		<h1>Page 1</h1>
+		<p>Hi, my name is Lance Meurs</p>
+		<div id="box" class="flex-row">
+			<div id="margin" class="css-box-model">
+				<span class="labelText">margin</span>
+				<div id="border" class="css-box-model">
+					<span class="labelText">border</span>
+					<div id="padding" class="css-box-model">
+						<span class="labelText">padding</span>
+						<div id="element" class="css-box-model">
+							72 x 28
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="ml-12 upright">My Box Model:</p>
+		</div>
+		
+		
+	</div>
+</body>
 </html>
