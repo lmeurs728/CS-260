@@ -1,11 +1,11 @@
 body{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	height: 100vw;
+	height: 92vh;
 }
 
 .main-page {
-	margin-left: 40%;
-	margin-right: 10%;
+	margin-left: 25%;
+	margin-right: 25%;
 	padding: 2rem;
 	height: 100%;
 	background-color: rgb(243, 243, 239);
@@ -74,29 +74,51 @@ h1 {
 }
 
 ul {
-	list-style-type: none;
+	padding: 8px;
 	margin: 0;
-	padding: 0;
-	width: 25%;
-	background-color: #f1f1f1;
-	height: 100%; /* Full height */
-	position: fixed; /* Make it stick, even on scroll */
-	overflow: auto; /* Enable scrolling if the sidenav has too much content */
+	list-style-type: none;
+	width: 100%;
+	height: auto;
+	margin-top: -0.5rem;
+	margin-left: -8px;
+	background-color: #292929;
+	position: fixed;
+	overflow: auto;
+}
+
+@media only screen and (max-width: 640px) {
+	.side-nav {
+		padding: 8px;
+		text-align: center;
+		display: block;
+	}
+
+	.main-page {
+		margin-right: -0.5rem;
+		margin-left: -0.5rem;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.side-nav {
+		padding: 8px;
+		display: inline;
+	}
 }
 
 .side-nav {
-	text-align: center;
+	margin-left: -8px;
 }
 
-.side-nav a {
-	display: block;
-	color: #000;
-	padding: 8px 16px;
+a {
 	text-decoration: none;
+	color: white;
 }
 
-/* Change the link color on hover */
 .side-nav a:hover {
+	padding: 8px;
+	margin-left: -8px;
+	margin-right: -8px;
 	background-color: #555;
 	color: white;
 }
